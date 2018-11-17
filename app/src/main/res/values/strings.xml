@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Profile App</string>
+    <string name="profile_name">Junier Oniel Damian Pimentel</string>
+    <string name="job_title">Software Developer</string>
+    <string name="education_header">Education</string>
+    <string name="itla_edu">Software Development Technologist</string>
+    <string name="itla_edu_year">2014 - 2016</string>
+    <string name="intec_edu">Engineering Degree</string>
+    <string name="intec_edu_year">2017</string>
+    <string name="job_header">Job</string>
+    <string name="mbg_job1">Senior Mobile Developer</string>
+    <string name="github_header">GitHub</string>
+    <string name="github_repo">Repositories</string>
+    <string name="github_stars">Stars</string>
+    <string name="github_followers">Followers</string>
+    <string name="share_profile_button">Share Profile</string>
+</resources>
