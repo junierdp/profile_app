@@ -13,6 +13,11 @@ This project is a Homework that implement "Activities and Intents" in Android us
 
 # Screen Examples:
 
+## Login activity
+<img src="https://raw.githubusercontent.com/junierdp/profile_app/master/screen/login.jpg" align="center" height="500px" width="282px"/>
+
+## Profile activity
+<img src="https://raw.githubusercontent.com/junierdp/profile_app/master/screen/profile.jpg" align="center" height="500px" width="282px"/>
 
 ### Resources:
 + https://developer.android.com/guide/components/activities
