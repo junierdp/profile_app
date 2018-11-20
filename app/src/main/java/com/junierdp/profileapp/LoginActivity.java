@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView passwordTextView;
     Button loginButton;
 
-    List<Profile> profiles = new ArrayList<Profile>();
+    List<Profile> profiles = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                         String _username = usernameTextView.getText().toString();
                         String _password = passwordTextView.getText().toString();
 
-                        if (profile.username.equals(_username) && profile.password.equals(_password)) {
+                        if (profile.getUsername().equals(_username) && profile.getPassword().equals(_password)) {
                             profileLogged = profile;
                             break;
                         }
@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
 
         this.profiles.add(
                 new Profile(
+                        R.drawable.junier,
                         "Junier Oniel",
                         "Damian Pimentel",
                         "junierdp",
@@ -71,11 +72,13 @@ public class LoginActivity extends AppCompatActivity {
                         "2018",
                         19,
                         1,
-                        5
+                        5,
+                        "https://github.com/junierdp"
                 )
         );
         this.profiles.add(
                 new Profile(
+                        R.drawable.junier,
                         "Oniel",
                         "Damian",
                         "onieldp",
@@ -88,7 +91,8 @@ public class LoginActivity extends AppCompatActivity {
                         "2016-2018",
                         19,
                         1,
-                        5
+                        5,
+                        "https://github.com/junierdp"
                 )
         );
     }

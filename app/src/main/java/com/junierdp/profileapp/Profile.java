@@ -3,21 +3,24 @@ package com.junierdp.profileapp;
 import java.io.Serializable;
 
 public class Profile implements Serializable {
-    String firstName;
-    String lastName;
-    String username;
-    String password;
-    String career;
-    int universityImage;
-    String universityYear;
-    int jobImage;
-    String jobTitle;
-    String jobYear;
-    int gitHubRepositories;
-    int gitHubStars;
-    int gitHubFollowers;
+    private Integer profileImage;
+    private String firstName;
+    private String lastName;
+    private String username;
+    private String password;
+    private String career;
+    private Integer universityImage;
+    private String universityYear;
+    private Integer jobImage;
+    private String jobTitle;
+    private String jobYear;
+    private int gitHubRepositories;
+    private int gitHubStars;
+    private int gitHubFollowers;
+    private String gitHubLink;
 
-    public Profile(String firstName, String lastName, String username, String password, String career, int universityImage, String universityYear, int jobImage, String jobTitle, String jobYear, int gitHubRepositories, int gitHubStars, int gitHubFollowers) {
+    public Profile(Integer profileImage, String firstName, String lastName, String username, String password, String career, Integer universityImage, String universityYear, Integer jobImage, String jobTitle, String jobYear, int gitHubRepositories, int gitHubStars, int gitHubFollowers, String gitHubLink) {
+        this.profileImage = profileImage;
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
@@ -31,6 +34,15 @@ public class Profile implements Serializable {
         this.gitHubRepositories = gitHubRepositories;
         this.gitHubStars = gitHubStars;
         this.gitHubFollowers = gitHubFollowers;
+        this.gitHubLink = gitHubLink;
+    }
+
+    public Integer getProfileImage() {
+        return profileImage;
+    }
+
+    public void setProfileImage(Integer profileImage) {
+        this.profileImage = profileImage;
     }
 
     public String getFirstName() {
@@ -57,12 +69,28 @@ public class Profile implements Serializable {
         this.username = username;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getCareer() {
         return career;
     }
 
-    public void setCareer(String carrer) {
-        this.career = carrer;
+    public void setCareer(String career) {
+        this.career = career;
+    }
+
+    public Integer getUniversityImage() {
+        return universityImage;
+    }
+
+    public void setUniversityImage(Integer universityImage) {
+        this.universityImage = universityImage;
     }
 
     public String getUniversityYear() {
@@ -73,11 +101,19 @@ public class Profile implements Serializable {
         this.universityYear = universityYear;
     }
 
+    public Integer getJobImage() {
+        return jobImage;
+    }
+
+    public void setJobImage(Integer jobImage) {
+        this.jobImage = jobImage;
+    }
+
     public String getJobTitle() {
         return jobTitle;
     }
 
-    public void setJobPlace(String jobTitle) {
+    public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
     }
 
@@ -111,5 +147,13 @@ public class Profile implements Serializable {
 
     public void setGitHubFollowers(int gitHubFollowers) {
         this.gitHubFollowers = gitHubFollowers;
+    }
+
+    public String getGitHubLink() {
+        return gitHubLink;
+    }
+
+    public void setGitHubLink(String gitHubLink) {
+        this.gitHubLink = gitHubLink;
     }
 }
